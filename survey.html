@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+    <link rel="stylesheet" href="stylee.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+    <h1>Newton School Survey Form</h1>
+    <form action="" id="form">
+    
+         <div class="Survey">
+             <label for="name" id="name-id">Name</label>
+             <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+      <br>
+        
+        <div class="Survey">
+            <label for="email" id="email-id">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email" />
+       </div>
+       <br>
+
+       <div class="Survey">
+        <label for="age" id="age-id">Age</label>
+        <input type="text" id="age" placeholder="Enter your Age" />
+       </div>
+       <br>
+
+       <div class="Survey">
+        <label for="role" id="profession">Your Profession</label>
+
+        <select name="role" id="profession">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+       </div>
+       <br>
+       <div class="Survey">
+        <label> 
+            Would you recommend Newton School to your friends?
+        </label> <br>
+
+        <label for="recommend-A">
+            <input type="radio" id="recommend-A" name="recommend">Yes</label>
+        </label>
+
+        <label for="recommend-B">
+            <input type="radio" id="recommend-B" name="recommend">No</label>
+        </label>
+       </div>
+       <br>
+
+    <div class="form-control">
+        <label> Your Skills
+            <small>(Check all that apply)</small>
+        </label>
+        <label for="inp-1">
+        <input type="checkbox" name="inp">HTML</input>
+        </label>
+        <label for="inp-2">
+        <input type="checkbox" name="inp">CSS</input>
+        </label>
+        <label for="inp-3">
+        <input type="checkbox" name="inp">Javascript</input>
+        </label>
+        <label for="inp-4">
+        <input type="checkbox" name="inp">Data Structure</input>
+        </label>
+    </div>
+      <div class="form-control">
+        <label for="feedback">
+            <textarea name="feedback" id="feedback" placeholder="Give your feedback"></textarea>
+        </label>
+      </div>
+      <button type="submit" id="btn" value="submit"> Submit</button>
+
+    </form>    
+</body>
+</html>
